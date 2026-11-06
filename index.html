@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Saffron Real Deals helps you buy, sell, rent and manage properties in Pune. Find a place that feels like home.">
+<title>Saffron Real Deals | Buy • Sell • Rent • Manage</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#17251f;--green:#173f32;--green2:#245744;--gold:#c99b4b;--cream:#f7f5ef;--muted:#69766f;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:'DM Sans',sans-serif;color:var(--ink);background:#fff}a{text-decoration:none;color:inherit}.container{width:min(1160px,92%);margin:auto}
+.topbar{background:var(--green);color:#e8eee9;font-size:12px;padding:9px 0}.topbar .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 4px 24px #10291b0d}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{display:flex;align-items:center;gap:11px}.logo{width:43px;height:43px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:var(--gold);font-family:Georgia,serif;font-size:25px;border:2px solid var(--gold)}.brand strong{display:block;font-family:'Playfair Display',serif;font-size:19px}.brand small{font-size:10px;letter-spacing:1.8px;color:var(--muted)}nav{display:flex;align-items:center;gap:27px;font-size:13px;font-weight:600}nav a:hover{color:var(--gold)}.nav-cta,.btn{background:var(--gold);color:#1d271f;padding:13px 20px;border-radius:4px;font-weight:700;font-size:13px;display:inline-block;transition:.2s}.nav-cta:hover,.btn:hover{transform:translateY(-2px);background:#d9ad62}
+.hero{background:linear-gradient(90deg,rgba(12,35,27,.88),rgba(12,35,27,.48)),url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=85') center/cover;min-height:600px;color:white;display:flex;align-items:center}.hero-content{max-width:680px;padding:90px 0}.eyebrow{color:#e5bd75;text-transform:uppercase;letter-spacing:3px;font-size:11px;font-weight:700}.hero h1{font:700 clamp(42px,6vw,68px)/1.08 'Playfair Display',serif;margin:18px 0}.hero p{color:#e2e9e4;font-size:16px;line-height:1.8;max-width:560px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn-outline{border:1px solid #ffffff9c;color:white;padding:13px 20px;border-radius:4px;font-size:13px;font-weight:700}.trust{display:flex;gap:28px;flex-wrap:wrap;margin-top:45px;color:#e9eee9;font-size:12px}.trust b{color:#f0c77e;font-size:20px;display:block;margin-bottom:3px}
+.search-wrap{margin-top:-38px;position:relative;z-index:2}.searchbox{background:white;box-shadow:0 15px 50px #10291b18;border-radius:8px;padding:23px 27px;display:flex;align-items:center;justify-content:space-between;gap:20px}.searchbox h3{margin:0 0 5px;font:600 21px 'Playfair Display',serif}.searchbox p{margin:0;color:var(--muted);font-size:12px}.search-options{display:flex;gap:10px;flex-wrap:wrap}.search-options a{border:1px solid #e3e8e3;padding:12px 18px;border-radius:4px;font-size:12px;font-weight:700}.search-options a:hover{background:var(--green);color:white}
+section{padding:88px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 42px}.section-head .eyebrow{color:var(--gold)}.section-head h2{font:700 clamp(30px,4vw,43px)/1.15 'Playfair Display',serif;margin:12px 0}.section-head p{color:var(--muted);line-height:1.7;font-size:14px}
+.services{background:var(--cream)}.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.service{background:white;padding:28px 22px;border-radius:6px;border:1px solid #ecece5;transition:.2s}.service:hover{transform:translateY(-5px);box-shadow:0 12px 30px #17251f10}.service-icon{width:47px;height:47px;border-radius:50%;display:grid;place-items:center;background:#f6eddd;color:var(--green);font-size:22px}.service h3{font:600 19px 'Playfair Display',serif;margin:18px 0 9px}.service p{font-size:12px;line-height:1.7;color:var(--muted);margin:0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.about-img{min-height:430px;border-radius:7px;background:url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1100&q=85') center/cover;position:relative}.rating-card{position:absolute;bottom:24px;right:-22px;background:white;padding:20px 24px;box-shadow:0 10px 35px #17251f20;border-radius:5px}.rating-card strong{font-size:28px;color:var(--green)}.rating-card span{display:block;font-size:11px;color:var(--muted);margin-top:4px}.about-copy .eyebrow{color:var(--gold)}.about-copy h2{font:700 40px/1.15 'Playfair Display',serif;margin:13px 0}.about-copy p{color:var(--muted);font-size:14px;line-height:1.85}.checks{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin:25px 0}.checks span{font-size:12px;font-weight:600}.checks span:before{content:'✓';color:var(--gold);font-weight:700;margin-right:8px}
+.reviews{background:var(--green);color:white}.reviews .section-head p{color:#cbd8d0}.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.review{background:#ffffff0c;border:1px solid #ffffff22;padding:25px;border-radius:6px}.stars{color:#e8bb6b;letter-spacing:3px}.review p{font-size:13px;line-height:1.8;color:#e0e9e3;min-height:95px}.review strong{font-size:13px}.review small{display:block;color:#aebfb4;margin-top:4px;font-size:11px}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px}.contact-info h2{font:700 39px 'Playfair Display',serif;margin:12px 0}.contact-info p{color:var(--muted);font-size:14px;line-height:1.8}.contact-line{display:flex;gap:13px;margin:22px 0;align-items:flex-start}.contact-line i{font-style:normal;color:var(--gold);font-size:19px}.contact-line b{display:block;font-size:13px}.contact-line span{font-size:12px;color:var(--muted);line-height:1.6}.contact-form{background:var(--cream);padding:30px;border-radius:7px}.contact-form h3{font:600 24px 'Playfair Display',serif;margin:0 0 20px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:13px}.contact-form input,.contact-form select,.contact-form textarea{width:100%;border:1px solid #e1e3dc;background:white;padding:14px;font:13px 'DM Sans',sans-serif;border-radius:3px;outline:none}.contact-form textarea{grid-column:1/-1;min-height:100px;resize:vertical}.contact-form button{border:0;cursor:pointer;margin-top:14px;width:100%;font-family:inherit}.form-note{font-size:10px;color:var(--muted);margin-top:10px}
+footer{background:#102b22;color:#dce7df;padding:35px 0}.footer-row{display:flex;justify-content:space-between;gap:25px;align-items:center;flex-wrap:wrap}.footer-row p{font-size:11px;color:#aebfb4;margin:5px 0}.footer-links{display:flex;gap:18px;font-size:12px}.promo{background:#f4ead8;color:#24352c;padding:15px 10px;text-align:center;font-size:13px}.promo b{color:#8b5d19}.promo a{text-decoration:underline;font-weight:700;margin-left:5px}
+.whatsapp{position:fixed;right:22px;bottom:22px;z-index:20;background:#1eaa62;color:white;padding:14px 18px;border-radius:40px;font-size:12px;font-weight:700;box-shadow:0 8px 25px #0002}
+@media(max-width:850px){nav{gap:13px}.service-grid{grid-template-columns:repeat(2,1fr)}.about-grid,.contact-grid{grid-template-columns:1fr;gap:35px}.about-img{min-height:340px;margin-right:18px}.review-grid{grid-template-columns:1fr}.searchbox{align-items:flex-start;flex-direction:column}.hero{min-height:550px}}
+@media(max-width:600px){.topbar .container{justify-content:center;text-align:center}.nav{height:auto;padding:14px 0;flex-wrap:wrap}.nav-cta{padding:10px 13px}nav{order:3;width:100%;overflow:auto;padding:8px 0;justify-content:space-between;gap:18px}nav a{white-space:nowrap;font-size:12px}.hero-content{padding:75px 0}.hero h1{font-size:43px}.trust{gap:18px}.service-grid{grid-template-columns:1fr 1fr;gap:10px}.service{padding:20px 15px}.fields{grid-template-columns:1fr}.contact-form textarea{grid-column:auto}.rating-card{right:-10px}.section-head h2{font-size:32px}section{padding:65px 0}.footer-links{flex-wrap:wrap}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="container"><span>📍 Mahalunge, Pune, Maharashtra</span><span>Call us: <a href="tel:+919579568471">+91 95795 68471</a> &nbsp; | &nbsp; Open daily · Closes 8 PM</span></div></div>
+<header><div class="container nav">
+<a class="brand" href="#home"><span class="logo">S</span><span><strong>Saffron Real Deals</strong><small>BUY · SELL · RENT · MANAGE</small></span></a>
+<nav><a href="#home">Home</a><a href="#services">Our Services</a><a href="#about">About Us</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></nav>
+<a class="nav-cta" href="#contact">Enquire Now ↗</a>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="container"><div class="hero-content">
+<div class="eyebrow">Your property journey, made simpler</div>
+<h1>Find a place<br>to call <em>home.</em></h1>
+<p>Buying, selling, renting or managing a property in Pune? Get clear guidance and dependable support at every step with Saffron Real Deals.</p>
+<div class="hero-actions"><a class="btn" href="#contact">Explore Your Options ↗</a><a class="btn-outline" href="tel:+919579568471">Call +91 95795 68471</a></div>
+<div class="trust"><div><b>5.0 ★</b>Google rating</div><div><b>148+</b>Customer reviews</div><div><b>4-in-1</b>Property services</div></div>
+</div></div></section>
+<div class="container search-wrap"><div class="searchbox"><div><h3>What are you looking for?</h3><p>Tell us what you need. Our team is ready to help.</p></div><div class="search-options"><a href="#contact">Buy a property</a><a href="#contact">Rent a property</a><a href="#contact">Sell a property</a><a href="#contact">Property management</a></div></div></div>
+<section class="services" id="services"><div class="container"><div class="section-head"><div class="eyebrow">What we do</div><h2>Property solutions under one roof</h2><p>From finding the right space to managing your property, we help make every move easier.</p></div>
+<div class="service-grid">
+<div class="service"><div class="service-icon">⌂</div><h3>Buy Property</h3><p>Explore property options that match your location, budget and requirements.</p></div>
+<div class="service"><div class="service-icon">↗</div><h3>Sell Property</h3><p>Get assistance in presenting your property and connecting with interested buyers.</p></div>
+<div class="service"><div class="service-icon">🔑</div><h3>Rent Property</h3><p>Find a rental home or connect with people looking for a place like yours.</p></div>
+<div class="service"><div class="service-icon">⌂</div><h3>Property Management</h3><p>Get support with day-to-day property coordination and management needs.</p></div>
+</div></div></section>
+<section id="about"><div class="container about-grid"><div class="about-img"><div class="rating-card"><strong>5.0 / 5</strong><span>Based on 148 Google reviews*</span></div></div><div class="about-copy"><div class="eyebrow">About Saffron Real Deals</div><h2>Real estate decisions deserve real support.</h2><p>At Saffron Real Deals, our focus is to make property transactions and rentals simpler through responsive communication, practical guidance and customer-focused service.</p><p>Whether you are new to Pune, relocating, searching for a rental or exploring a property sale, connect with our team to discuss your requirements.</p><div class="checks"><span>Responsive communication</span><span>Customer-first approach</span><span>Rental assistance</span><span>Property coordination</span></div><a class="btn" href="#contact">Talk to our team ↗</a></div></div></section>
+<section class="reviews" id="reviews"><div class="container"><div class="section-head"><div class="eyebrow">Client experiences</div><h2>Trusted by customers</h2><p>Here is what customers have shared about their experience with Saffron Real Deals.</p></div>
+<div class="review-grid">
+<div class="review"><div class="stars">★★★★★</div><p>“Dinesh was professional, responsive, and transparent in all communications. He understood my requirements well.”</p><strong>Ayush Soni</strong><small>Customer review · 4 months ago</small></div>
+<div class="review"><div class="stars">★★★★★</div><p>“Their service was quick and efficient. Both Dinesh sir and Kiran ma’am were professional and supportive.”</p><strong>Beneta Lobo</strong><small>Customer review · 9 months ago</small></div>
+<div class="review"><div class="stars">★★★★★</div><p>“They helped me with all the paperwork and got things done pretty quickly. My doubts were solved instantly.”</p><strong>Sai Subrata Panigrahi</strong><small>Customer review · 7 months ago</small></div>
+</div><p style="text-align:center;font-size:10px;color:#b9c9bf;margin-top:20px">*Rating and review details supplied for this website concept. Confirm current figures before publishing.</p>
+</div></section>
+<section id="contact"><div class="container contact-grid"><div class="contact-info"><div class="eyebrow">Let's connect</div><h2>Tell us what you’re looking for.</h2><p>Share a few details and our team can get in touch to understand your property requirements.</p>
+<div class="contact-line"><i>☎</i><div><b>Call us</b><span><a href="tel:+919579568471">+91 95795 68471</a></span></div></div>
+<div class="contact-line"><i>⌖</i><div><b>Visit our office</b><span>Office No. T03, VTP Town Square, Godrej Properties Township, Nande–Balewadi Road, opposite Godrej Hillside, Mahalunge, Pune, Maharashtra 411045</span></div></div>
+<div class="contact-line"><i>◷</i><div><b>Business hours</b><span>Open · Closes 8 PM (as listed on Google)</span></div></div>
+<a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=VTP+Town+Square+Mahalunge+Pune">Get Directions ↗</a>
+</div>
+<form class="contact-form" id="leadForm"><h3>Send an enquiry</h3><div class="fields">
+<input id="name" required placeholder="Your name" aria-label="Your name">
+<input id="phone" required type="tel" placeholder="Phone number" aria-label="Phone number">
+<select id="requirement" required aria-label="Property requirement"><option value="">I am interested in...</option><option>Buying a property</option><option>Selling a property</option><option>Renting a property</option><option>Property management</option></select>
+<input id="location" placeholder="Preferred location (optional)" aria-label="Preferred location">
+<textarea id="message" placeholder="Tell us a little about your requirement (optional)" aria-label="Message"></textarea>
+</div><button class="btn" type="submit">Send enquiry on WhatsApp ↗</button><div class="form-note">This demo form opens WhatsApp with your enquiry details. No information is stored on this website.</div></form>
+</div></section>
+</main>
+<div class="promo"><b>Want a professional website like this for your business?</b> Get your website designed for just <b>₹15,000.</b> <a href="https://wa.me/919579568471?text=Hi%2C%20I%27m%20interested%20in%20a%20business%20website%20for%20%E2%82%B915%2C000.">Enquire now</a></div>
+<footer><div class="container footer-row"><div class="brand"><span class="logo">S</span><span><strong style="color:white">Saffron Real Deals</strong><small style="color:#aebfb4">BUY · SELL · RENT · MANAGE</small></span></div><p>© <span id="year"></span> Saffron Real Deals. All rights reserved.</p><div class="footer-links"><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></div></div></footer>
+<a class="whatsapp" href="https://wa.me/919579568471?text=Hi%20Saffron%20Real%20Deals%2C%20I%20have%20a%20property%20enquiry." target="_blank" rel="noopener">☏ WhatsApp Us</a>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('leadForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const name=document.getElementById('name').value.trim();
+ const phone=document.getElementById('phone').value.trim();
+ const requirement=document.getElementById('requirement').value;
+ const location=document.getElementById('location').value.trim();
+ const message=document.getElementById('message').value.trim();
+ const text=`Hello Saffron Real Deals!%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0ARequirement: ${encodeURIComponent(requirement)}%0APreferred location: ${encodeURIComponent(location||'Not specified')}%0AMessage: ${encodeURIComponent(message||'Not specified')}`;
+ window.open('https://wa.me/919579568471?text='+text,'_blank','noopener');
+});
+</script>
+</body></html>
